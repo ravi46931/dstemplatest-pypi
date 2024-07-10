@@ -25,8 +25,8 @@ setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "dstemplatest"},
-    packages=find_packages(where="dstemplatest"),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     # Install requires may be added at here
     install_requires=[
         "pandas",

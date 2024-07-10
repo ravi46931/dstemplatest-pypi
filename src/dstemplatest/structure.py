@@ -2,7 +2,7 @@ import requests
 import zipfile
 import os
 import shutil
-from constants import URL
+URL = "https://github.com/ravi46931/Default-project-structure/archive/refs/heads/main.zip"
 
 # URL of the ZIP file
 url = URL

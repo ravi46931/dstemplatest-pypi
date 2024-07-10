@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 
 ## Required files
-__version__ = "0.0.15"
+__version__ = "0.0.17"
 REPO_NAME = "dstemplatest-pypi"
 PKG_NAME = "dstemplatest"  # package will be visible with this name in PyPI
 AUTHOR_USER_NAME = "ravi46931"  # GitHub user name
@@ -30,6 +30,12 @@ setup(
     # Install requires may be added at here
     install_requires=[
         "pandas",
-        "numpy"  
+        "numpy",
+        "requests"  
     ],
+    entry_points={
+        'console_scripts': [
+            'create-template=dstemplatest.structure:main',
+        ],
+    },
 )
